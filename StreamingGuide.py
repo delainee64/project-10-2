@@ -73,7 +73,7 @@ class StreamingGuide:
             if service.get_name() == streaming_name:
                 self.__stream_serv.remove(service)
 
-    def where_to_watch(self, movie_title):
+    def where_to_watch_movie(self, movie_title):
         """Creates a list of movies."""
         for service in self.__stream_serv:
             if movie_title in service.get_catalog():
@@ -107,5 +107,5 @@ class StreamingGuide:
 # stream_guide.add_streaming_service(stream_serv_2)
 # stream_guide.add_streaming_service(stream_serv_3)
 # stream_guide.delete_streaming_service('Hula')
-# search_results = stream_guide.where_to_watch('Little Women')
+# search_results = stream_guide.where_to_watch_movie('Little Women')
 # print(search_results)
